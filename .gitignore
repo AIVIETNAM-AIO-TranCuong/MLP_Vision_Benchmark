@@ -1,0 +1,25 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Virtual Environment
+venv/
+env/
+.env/
+
+# Data
+dataset/
+data/cifar-10-batches-py/
+
+# Results & Checkpoints
+results/
+*.pt
+*.pth
+
+# IDE
+.vscode/
+.idea/
