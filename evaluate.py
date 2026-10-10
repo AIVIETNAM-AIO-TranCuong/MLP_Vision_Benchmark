@@ -94,7 +94,7 @@ def evaluate_checkpoint(args):
 
 def summarize_results(results_dir):
     """Tổng hợp tất cả kết quả từ JSON files thành bảng."""
-    json_files = glob.glob(os.path.join(results_dir, "*.json"))
+    json_files = glob.glob(os.path.join(results_dir, "**/*.json"), recursive=True)
 
     if not json_files:
         print(f"No result files found in {results_dir}")

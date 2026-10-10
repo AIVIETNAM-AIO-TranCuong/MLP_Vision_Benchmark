@@ -11,7 +11,11 @@ Thêm model mới:
 """
 
 from models.gmlp import build_gmlp
-# from models.vit import build_vit
+from models.resmlp import build_resmlp
+from models.ViT import build_vit
+from models.mlp_mixer import build_mlp_mixer
+from models.convmixer import build_convmixer
+
 
 # ============================================================
 # MODEL REGISTRY
@@ -20,10 +24,10 @@ from models.gmlp import build_gmlp
 
 MODEL_REGISTRY = {
     "gmlp": build_gmlp,
-    # "vit": build_vit,              # Giang sẽ thêm
-    # "mlp_mixer": build_mlp_mixer,  # Thy sẽ thêm
-    # "resmlp": build_resmlp,        # Minh sẽ thêm
-    # "convmixer": build_convmixer,  # Tiên sẽ thêm
+    "vit": build_vit,              
+    "mlp_mixer": build_mlp_mixer,  
+    "resmlp": build_resmlp,
+    "convmixer": build_convmixer, 
 }
 
 

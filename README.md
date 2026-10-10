@@ -13,19 +13,25 @@ MD4_conquer/
 │   └── WEEK01 - Outline and Plan.docx
 ├── data/
 │   └── cifar10.py           # CIFAR-10 loader (45k/5k/10k split)
+├── dataset/                 # Thư mục chứa dữ liệu gốc tải về
 ├── models/
 │   ├── __init__.py          # Model registry
-│   ├── gmlp.py              # 🔲 gMLP (Cường)
-│   ├── vit.py               # 🔲 ViT (Giang)
-│   ├── mlp_mixer.py         # 🔲 MLP-Mixer (Thy)
-│   ├── resmlp.py            # 🔲 ResMLP (Minh)
-│   └── convmixer.py         # 🔲 ConvMixer (Tiên)
+│   ├── gmlp.py              # ✅ gMLP (Cường)
+│   ├── ViT.py               # ✅ ViT (Giang)
+│   ├── mlp_mixer.py         # ✅ MLP-Mixer (Thy)
+│   ├── resmlp.py            # ✅ ResMLP (Minh)
+│   └── convmixer.py         # ✅ ConvMixer (Tiên)
 ├── configs/
 │   └── default.py           # Tất cả configs
+├── report/                  # Báo cáo cuối kỳ LaTeX
+├── visualizations/          # Hình ảnh biểu đồ đánh giá
 ├── train.py                 # Script train chung
 ├── evaluate.py              # Script đánh giá + tổng hợp
+├── visualize.py             # Script sinh biểu đồ
 ├── utils.py                 # Utilities dùng chung
 ├── results/                 # Kết quả chạy (JSON + checkpoints)
+├── MD4_AutoTrain.ipynb      # Notebook hỗ trợ training tự động
+├── final_project.zip        # File nộp đồ án
 └── requirements.txt
 ```
 
@@ -71,7 +77,7 @@ python -m models.gmlp
 | Thành viên | Model | File cần tạo |
 |-----------|-------|-------------|
 | Cường | gMLP | `models/gmlp.py` |
-| Giang | ViT | `models/vit.py` |
+| Giang | ViT | `models/ViT.py` |
 | Thy | MLP-Mixer | `models/mlp_mixer.py` |
 | Minh | ResMLP | `models/resmlp.py` |
 | Tiên | ConvMixer | `models/convmixer.py` |

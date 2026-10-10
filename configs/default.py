@@ -143,27 +143,30 @@ MODEL_CONFIGS = {
     },
 
     # --------------------------------------------------------
-    # ResMLP (Minh) — placeholder, Minh sẽ điền
+    # ResMLP (Minh)
     # --------------------------------------------------------
     "resmlp": {
         "small": {
             "depth": 8,
-            "dim": 192,
-            "ffn_dim": 384,
+            "dim": 120,
+            "ffn_dim": 480,
+            "init_scale": 0.0001,
             "patch_size": 4,
             "num_classes": 10,
         },
         "medium": {
-            "depth": 16,
-            "dim": 256,
-            "ffn_dim": 512,
+            "depth": 12,
+            "dim": 176,
+            "ffn_dim": 704,
+            "init_scale": 0.0001,
             "patch_size": 4,
             "num_classes": 10,
         },
         "large": {
-            "depth": 24,
-            "dim": 384,
-            "ffn_dim": 768,
+            "depth": 16,
+            "dim": 248,
+            "ffn_dim": 992,
+            "init_scale": 0.0001,
             "patch_size": 4,
             "num_classes": 10,
         },
