@@ -7,32 +7,25 @@ So sánh 5 kiến trúc thay self-attention bằng MLP tĩnh trên CIFAR-10:
 ## 🏗️ Cấu trúc Project
 ```
 MD4_conquer/
-├── docs/                    # Tài liệu quản lý dự án & tracking
-│   ├── leader_action_plan.md
-│   ├── Paper Tracker - Multilayer Perceptron.xlsx
-│   └── WEEK01 - Outline and Plan.docx
 ├── data/
 │   └── cifar10.py           # CIFAR-10 loader (45k/5k/10k split)
-├── dataset/                 # Thư mục chứa dữ liệu gốc tải về
 ├── models/
 │   ├── __init__.py          # Model registry
-│   ├── gmlp.py              # ✅ gMLP (Cường)
-│   ├── ViT.py               # ✅ ViT (Giang)
-│   ├── mlp_mixer.py         # ✅ MLP-Mixer (Thy)
-│   ├── resmlp.py            # ✅ ResMLP (Minh)
-│   └── convmixer.py         # ✅ ConvMixer (Tiên)
+│   ├── gmlp.py              
+│   ├── vit.py               
+│   ├── mlp_mixer.py        
+│   ├── resmlp.py            
+│   └── convmixer.py   
+├── results/                 # Kết quả chạy (JSON + checkpoints)
+├── visualizations/          # Kết quả visualization      
 ├── configs/
 │   └── default.py           # Tất cả configs
-├── report/                  # Báo cáo cuối kỳ LaTeX
-├── visualizations/          # Hình ảnh biểu đồ đánh giá
 ├── train.py                 # Script train chung
 ├── evaluate.py              # Script đánh giá + tổng hợp
-├── visualize.py             # Script sinh biểu đồ
-├── utils.py                 # Utilities dùng chung
-├── results/                 # Kết quả chạy (JSON + checkpoints)
-├── MD4_AutoTrain.ipynb      # Notebook hỗ trợ training tự động
-├── final_project.zip        # File nộp đồ án
+├── utils.py                 # Utilities dùng chung                
 └── requirements.txt
+└── visualize.py
+
 ```
 
 ## 🚀 Cách sử dụng
@@ -77,7 +70,7 @@ python -m models.gmlp
 | Thành viên | Model | File cần tạo |
 |-----------|-------|-------------|
 | Cường | gMLP | `models/gmlp.py` |
-| Giang | ViT | `models/ViT.py` |
+| Giang | ViT | `models/vit.py` |
 | Thy | MLP-Mixer | `models/mlp_mixer.py` |
 | Minh | ResMLP | `models/resmlp.py` |
 | Tiên | ConvMixer | `models/convmixer.py` |
